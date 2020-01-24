@@ -1,0 +1,42 @@
+{
+  "name": "add-number-featue-toggles",
+  "version": "1.0.0",
+  "description": "เป็นการทดลองเขียน Application ที่สามารถใช้ featue toggles ได้",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "tsc": "tsc"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SCK-SEAL-TEAM-One/add-number-featue-toggles.git"
+  },
+  "author": "seal one",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SCK-SEAL-TEAM-One/add-number-featue-toggles/issues"
+  },
+  "homepage": "https://github.com/SCK-SEAL-TEAM-One/add-number-featue-toggles#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/jest": "^24.9.1",
+    "jest-cli": "^25.1.0"
+  }
+}
