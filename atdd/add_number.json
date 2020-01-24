@@ -17,7 +17,7 @@
 							"    pm.response.to.have.status(200);",
 							"});",
 							"",
-							"pm.test(\"Result Number\", function () {",
+							"pm.test(\"Result Number is 4\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.result).to.eql(4);",
 							"});"
@@ -73,7 +73,7 @@
 							"    pm.response.to.have.status(200);",
 							"});",
 							"",
-							"pm.test(\"Result Number\", function () {",
+							"pm.test(\"Result Number is 4\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.result).to.eql(4);",
 							"});"
@@ -119,6 +119,25 @@
 		},
 		{
 			"name": "add number",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cdf125d4-666d-47de-a39b-5a703d982fca",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Result Number is 4\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.result).to.eql(4);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -156,6 +175,25 @@
 		},
 		{
 			"name": "add number /w toggled",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4dc9d5e1-6fb6-4874-886f-1a1af64c61ad",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Result Number is 4\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.result).to.eql(4);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
