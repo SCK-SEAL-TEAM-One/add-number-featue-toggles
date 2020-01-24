@@ -1,6 +1,6 @@
 import express, { Application as expressApplication } from 'express';
 import bodyParser from 'body-parser'
-import addNumberRoman from "./add_number";
+import {addNumberRoman} from "./add_number";
 
 export default class Application {
     public app: expressApplication // from import type express

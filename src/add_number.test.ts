@@ -1,4 +1,4 @@
-import addArabicNumber from './add_number'
+import {addArabicNumber} from "./add_number";
 
 describe('Add number arabic', () => {
     it('Input 1+1+2 should be 4',()=>{

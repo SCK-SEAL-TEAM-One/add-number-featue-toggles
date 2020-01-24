@@ -6,7 +6,7 @@ export function addArabicNumber(numbers:string[]):number{
     return sum
 }
 
-export default function addNumberRoman(numbers: number[]) : number {
+export function addNumberRoman(numbers: number[]) : number {
     var sum = 0
     const mapNumber = {
         "I":1,
