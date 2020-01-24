@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "9144edd8-1e26-49d0-9b31-ad26dc84aeba",
+		"_postman_id": "26413235-66e3-4bbc-b147-0c6164de949a",
 		"name": "add number",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -17,9 +17,9 @@
 							"    pm.response.to.have.status(200);",
 							"});",
 							"",
-							"pm.test(\"Resual Number\", function () {",
+							"pm.test(\"Result Number\", function () {",
 							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData.resaul).to.eql(4);",
+							"    pm.expect(jsonData.result).to.eql(4);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -46,7 +46,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3001/api/v1/addNumerArabic",
+					"raw": "http://localhost:3001/api/v1/addNumberArabic",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -55,7 +55,7 @@
 					"path": [
 						"api",
 						"v1",
-						"addNumerArabic"
+						"addNumberArabic"
 					]
 				}
 			},
@@ -73,9 +73,9 @@
 							"    pm.response.to.have.status(200);",
 							"});",
 							"",
-							"pm.test(\"Resual Number\", function () {",
+							"pm.test(\"Result Number\", function () {",
 							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData.resaul).to.eql(4);",
+							"    pm.expect(jsonData.result).to.eql(4);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -102,7 +102,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3001/api/v1/addNumerRoman",
+					"raw": "http://localhost:3001/api/v1/addNumberRoman",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -111,7 +111,7 @@
 					"path": [
 						"api",
 						"v1",
-						"addNumerRoman"
+						"addNumberRoman"
 					]
 				}
 			},
@@ -139,7 +139,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3001/api/v1/addNumer",
+					"raw": "http://localhost:3001/api/v1/addNumber",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -148,7 +148,7 @@
 					"path": [
 						"api",
 						"v1",
-						"addNumer"
+						"addNumber"
 					]
 				}
 			},
@@ -176,7 +176,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3001/api/v1/addNumer",
+					"raw": "http://localhost:3001/api/v1/addNumber",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -185,7 +185,7 @@
 					"path": [
 						"api",
 						"v1",
-						"addNumer"
+						"addNumber"
 					]
 				}
 			},
