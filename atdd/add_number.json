@@ -155,7 +155,7 @@
 			"response": []
 		},
 		{
-			"name": "add number open toogel",
+			"name": "add number /w toggled",
 			"request": {
 				"method": "POST",
 				"header": [
