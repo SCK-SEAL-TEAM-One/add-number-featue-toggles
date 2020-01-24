@@ -1,3 +1,11 @@
+export default function addArabicNumber(numbers:string[]):number{
+    var sum :number = 0;
+    for(let n of numbers){
+        sum += parseInt(n)
+    }
+    return sum
+}
+
 export default function addNumberRoman(numbers: number[]) : number {
     var sum = 0
     const mapNumber = {
