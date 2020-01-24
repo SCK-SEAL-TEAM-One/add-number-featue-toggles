@@ -1,6 +1,6 @@
 import express, { Application as expressApplication } from 'express';
 import bodyParser from 'body-parser'
-import {addNumberRoman} from "./add_number";
+import {addNumberRoman,addArabicNumber} from "./add_number";
 
 export default class Application {
     public app: expressApplication // from import type express
@@ -15,7 +15,7 @@ export default class Application {
 
         //route -> fn
         this.app.post('/api/v1/addNumberArabic', (request, response) => {
-            response.json({"result":4})
+            response.json({"result":addArabicNumber(request.body)})
         })
 
         this.app.post('/api/v1/addNumberRoman', (request, response) => {
