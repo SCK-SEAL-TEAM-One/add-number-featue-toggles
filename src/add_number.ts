@@ -1,3 +1,5 @@
+import {Map} from "typescript";
+
 export function addArabicNumber(numbers:string[]):number{
     var sum :number = 0;
     for(let n of numbers){
@@ -6,20 +8,19 @@ export function addArabicNumber(numbers:string[]):number{
     return sum
 }
 
-export function addNumberRoman(numbers: number[]) : number {
-    var sum = 0
-    const mapNumber = {
-        "I":1,
-        "II":2,
-        "III":3,
-        "IV":4,
-        "V":5,
-        "VI":6,
-        "VII":7,
-        "VIII":8,
-        "IX":9,
-        "X":10
-    }
-    numbers.forEach(number => console.log(number))
-    return 4
+export function addNumberRoman(numbers: string[]) : number {
+    let sum = 0;
+    const mapNumber = new Map()
+    mapNumber.set("I",1)
+    mapNumber.set("II",2)
+    mapNumber.set("III",3)
+    mapNumber.set("IV",4)
+    mapNumber.set("V",5)
+    mapNumber.set("VI",6)
+    mapNumber.set("VII",7)
+    mapNumber.set("VIII",8)
+    mapNumber.set("IX",9)
+    mapNumber.set("X",10)
+    numbers.forEach(number => sum += mapNumber.get(number))
+    return sum
 }
