@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/SCK-SEAL-TEAM-One/add-number-featue-toggles#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ts-jest": "^25.0.0",
     "typescript": "^3.7.5"
   },
